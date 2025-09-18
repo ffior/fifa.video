@@ -38,7 +38,7 @@ const items = [
     },
     {
         key: "africa-cup",
-        label: "非洲杯",
+        label: <Link to="/africa-cup">非洲杯</Link>,
         img: AfricaCup,
     },
     {
@@ -88,7 +88,7 @@ const items = [
     },
     {
         key: "csl",
-        label: "中超",
+        label: <Link to="/csl">中超</Link>,
         img: CSL,
     },
     {
