@@ -19,7 +19,7 @@ const Home = () => {
                         [
                             MatchStatus.unStarted,
                             MatchStatus.inprogress,
-                        ].includes(item.status)
+                        ].includes(item.status),
                     ),
                     style: {
                         marginBottom: "16px",
@@ -30,7 +30,7 @@ const Home = () => {
                 {...{
                     title: "比赛回放",
                     data: EUROPE_CUP_2024_LIST.filter((item) =>
-                        [MatchStatus.finish].includes(item.status)
+                        [MatchStatus.finish].includes(item.status),
                     ),
                     style: {
                         marginBottom: "16px",
@@ -43,18 +43,20 @@ const Home = () => {
                     data: EUROPE_CUP_2024_LIST.filter(
                         (item) =>
                             [MatchStatus.finish].includes(item.status) &&
-                            !!item.videoUrl
+                            !!item.videoUrl,
                     ),
                     style: {
                         marginBottom: "16px",
                     },
                 }}
             />
-            <MatchList
+            <MatchHighlights
                 {...{
                     title: "历史集锦",
-                    data: EUROPE_CUP_2024_LIST.filter((item) =>
-                        [MatchStatus.history].includes(item.status)
+                    data: EUROPE_CUP_2024_LIST.filter(
+                        (item) =>
+                            [MatchStatus.history].includes(item.status) &&
+                            !!item.videoUrl,
                     ),
                 }}
             />

@@ -10,11 +10,15 @@ export const _EUROPE_CUP_2024_LIST = [
         homeTeam: "德国",
         guestTeam: "苏格兰",
         time: "2024-06-15 03:00",
+        videoUrl: "http://r.com/mp4/ge/playlist.m3u8",
+        poster: "http://r.com/jpg/bob-brewer-unsplash-1.jpg",
     },
     {
         homeTeam: "匈牙利",
         guestTeam: "瑞士",
         time: "2024-06-15 21:00",
+        videoUrl: "http://r.com/mp4/blue-moon.mp4",
+        poster: "http://r.com/jpg/bob-brewer-unsplash-1.jpg",
     },
     {
         homeTeam: "西班牙",
