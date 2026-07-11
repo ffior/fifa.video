@@ -1,5 +1,5 @@
 import { CSSProperties, FC } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { Button } from "antd";
 import classNames from "classnames";
 import { MatchStatus } from "@/types";

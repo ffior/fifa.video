@@ -1,9 +1,6 @@
 import React, { lazy, Suspense } from "react";
-import {
-    createBrowserRouter,
-    RouterProvider,
-    RouteObject,
-} from "react-router-dom";
+import { createBrowserRouter, RouteObject } from "react-router";
+import { RouterProvider } from "react-router/dom";
 // import ProtectedRoute from "./protectedRoute";
 import Layout from "src/layouts";
 
@@ -23,7 +20,7 @@ export const routes: RouteObject[] = [
                 element: <Home />,
             },
             {
-                path: "/world-cup",
+                path: "/world-cup/*",
                 element: <WorldCup />,
             },
             {
@@ -46,9 +43,6 @@ const browserRouter = createBrowserRouter(routes);
 
 export default () => (
     <Suspense fallback={null}>
-        <RouterProvider
-            router={browserRouter}
-            fallbackElement={<p>Initial Load...</p>}
-        />
+        <RouterProvider router={browserRouter} />
     </Suspense>
 );

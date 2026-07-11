@@ -1,4 +1,4 @@
-// import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router";
 import classNames from "classnames";
 import { MatchStatus } from "@/types";
 import { MatchList, MatchTable, MatchHighlights } from "@/components";

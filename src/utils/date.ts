@@ -13,20 +13,13 @@ export const convertMatchStatus = (time: string) => {
     ) {
         result = MatchStatus.inprogress;
     } else if (
-        dayTime.add(2.5, "hour").isBefore(dayjs()) &&
-        dayTime.add(1, "year").isAfter(dayjs())
+        dayTime.add(30, "minute").isBefore(dayjs()) &&
+        dayTime.add(1, "hour").isAfter(dayjs())
     ) {
         result = MatchStatus.finish;
     } else {
         result = MatchStatus.history;
     }
-    if (time === "2024-06-22 21:00") {
-        console.log(
-            "1111",
-            dayTime.isBefore(dayjs()),
-            dayTime.add(2.5, "hour").isAfter(dayjs())
-        );
-        console.log(22, result);
-    }
+
     return result;
 };

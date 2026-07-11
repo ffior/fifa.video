@@ -1,20 +1,14 @@
 import { useEffect } from "react";
-import { matchRoutes, useLocation, useNavigate } from "react-router-dom";
+import { matchRoutes, useLocation, useNavigate } from "react-router";
 import { routes } from "./index";
 
 // meta 里的属性类型
 interface metaType {
     auth?: boolean; // auth：是否需要路由守卫进行身份验证
 }
-// 扩展 react-router-dom 的 RouteObject 类型
-declare module "react-router-dom" {
-    interface IndexRouteObject {
-        meta?: metaType;
-    }
-    interface NonIndexRouteObject {
-        meta?: metaType;
-    }
-}
+// react-router v7 的类型通过内部模块再导出，无法通过模块扩展合并，
+// 因此在此以局部类型描述携带 meta 的路由。
+type RouteWithMeta = { meta?: metaType };
 
 export default () => {
     const location = useLocation(); // 获取当前位置信息
@@ -28,7 +22,7 @@ export default () => {
         if (Array.isArray(matches)) {
             matches.forEach((match) => {
                 // 如果 meta.auth 为 true，且未登录，则跳转到首页
-                if (match.route.meta?.auth && !isLogged) {
+                if ((match.route as RouteWithMeta).meta?.auth && !isLogged) {
                     nav("/login");
                 }
             });

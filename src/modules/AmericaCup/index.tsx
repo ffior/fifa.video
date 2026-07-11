@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { RouteObject, useRoutes } from "react-router-dom";
+import { RouteObject, useRoutes } from "react-router";
 
 const AmericaCupIndex = lazy(
     () => import("src/modules/AmericaCup/AmericaCupIndex")

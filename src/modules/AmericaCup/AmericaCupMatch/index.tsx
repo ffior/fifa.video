@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { MatchStatus } from "src/types";
 import { MatchLive, MatchDetail } from "src/components";
 import { AMERICA_CUP_LIST } from "@/data";

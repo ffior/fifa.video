@@ -1,5 +1,5 @@
 import { FC, CSSProperties } from "react";
-// import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router";
 // import classNames from "classnames";
 // import { MatchStatus } from "@/types";
 import { MatchVs, Card } from "@/components";

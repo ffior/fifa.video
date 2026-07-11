@@ -1,0 +1,1 @@
+import{c as e}from"./index-Cz7j4mzE.js";var t=e(),n=()=>(console.log(`AmericaCupYear`),(0,t.jsx)(`div`,{children:`AmericaCupYear`}));export{n as default};

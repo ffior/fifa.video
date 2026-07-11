@@ -1,12 +1,5 @@
-import React, { lazy, Suspense } from "react";
-import {
-    createBrowserRouter,
-    RouterProvider,
-    RouteObject,
-    Routes,
-    Router,
-    useRoutes,
-} from "react-router-dom";
+import { lazy, Suspense } from "react";
+import { RouteObject, useRoutes } from "react-router";
 // import ProtectedRoute from "./protectedRoute";
 import Layout from "src/layouts";
 

@@ -1,0 +1,55 @@
+.video {
+    position: relative;
+    width: 320px;
+    margin: 8px;
+
+    video {
+        display: block;
+        width: 100%;
+        background: #000;
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    background: #1f1f1f;
+    border-radius: 0 0 4px 4px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+.volume {
+    flex: 1;
+    min-width: 60px;
+    cursor: pointer;
+    accent-color: #1677ff;
+}
+
+.rate {
+    height: 24px;
+    color: #fff;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+}

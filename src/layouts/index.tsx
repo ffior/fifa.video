@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link, useNavigate } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router";
 import { Layout, Menu, theme } from "antd";
 // import { IoIosFootball } from "react-icons/io";
 import { Card } from "src/components";
@@ -23,7 +23,7 @@ const { Header, Content, Sider, Footer } = Layout;
 const items = [
     {
         key: "world-cup",
-        label: "世界杯",
+        label: <Link to="/world-cup">世界杯</Link>,
         img: WorldCup,
     },
     {
