@@ -3,14 +3,17 @@ import dayjs from "dayjs";
 const type = "欧洲杯";
 const typeEn = "europe-cup";
 const year = 2024;
-const getUrl = (matchId) => `/${typeEn}/${year}/${matchId}`; // "/europe-cup/2024/2024062108001",
+const getUrl = (matchId) => `/${typeEn}/${year}/${matchId}`; // "/europe-cup/2024/202406210800",
 
 export const _EUROPE_CUP_2024_LIST = [
     {
         homeTeam: "德国",
+        homeTeamEn: "germany",
         guestTeam: "苏格兰",
+        guestTeamEn: "scotland",
         time: "2024-06-15 03:00",
-        videoUrl: "http://r.com/mp4/ge/playlist.m3u8",
+        videoUrl:
+            "http://r.com/mp4/europe_cup_2024/202406150300_germany_vs_scotland/playlist.m3u8",
         poster: "http://r.com/jpg/bob-brewer-unsplash-1.jpg",
     },
     {

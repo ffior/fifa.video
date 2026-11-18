@@ -26,6 +26,16 @@ export const _WORLD_CUP_2026_LIST = [
             "http://r.com/mp4/world_cpu_2026/202607110300_spain_vs_belgium/playlist.m3u8",
         poster: "http://r.com/jpg/bob-brewer-unsplash-1.jpg",
     },
+    {
+        homeTeam: "挪威",
+        homeTeamEn: "norway",
+        guestTeam: "英格兰",
+        guestTeamEn: "england",
+        time: "2026-07-12 05:00",
+        videoUrl:
+            "http://r.com/mp4/world_cpu_2026/202607120500_norway_vs_england/playlist.m3u8",
+        poster: "http://r.com/jpg/bob-brewer-unsplash-1.jpg",
+    },
 ];
 
 export const WORLD_CUP_2026_LIST = _WORLD_CUP_2026_LIST.map((item) => {
